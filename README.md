@@ -1,17 +1,20 @@
 # escrutinar_jp
 
-Description. 
-The package escrutinar is used to:
+Descrição. 
+
+O pacote escrutinar é usado para:
+	
+
 	- Pegar o endereço de IP de um site requisitado
 		--exemplo 1
 			from escrutinar_jp import escrutinar
 			print(escrutinar.pegaripsite("github.com"))
-
+			
 	- Saber os dados de um IP no formato json
 		-sondarip('' -> str, mostrar_flag=False -> bool)
 		se não colocar nada no parâmetro será retornado seu ip
 
-		-- exemplo 1
+		-- exemplo 2
 
 			from escrutinar_jp import escrutinar
 			print(escrutinar.sondarip("8.8.8.8"))
@@ -52,7 +55,7 @@ The package escrutinar is used to:
 						}
 					}
 
-		-- exemplo 2
+		-- exemplo 3
 		
 			from escrutinar_jp import escrutinar
 			print(escrutinar.sondarip("8.8.8.8", mostrar_flag=True))
@@ -102,15 +105,15 @@ The package escrutinar is used to:
 			
 
 
-## Installation
+## Instalação
 
-Use the package manager [pip](https://pip.pypa.io/en/stable/) to install escrutinar_jp
+Use o gerenciador de pacote [pip](https://pip.pypa.io/en/stable/) para instalar escrutinar_jp
 
 ```bash
 pip install escrutinar_jp
 ```
 
-## Usage
+## Uso
 
 ```python
 from escrutinar_jp import escrutinar
