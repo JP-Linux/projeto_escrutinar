@@ -6,19 +6,21 @@ O pacote escrutinar é usado para:
 	
 
 	- Pegar o endereço de IP de um site requisitado
+	
 		--exemplo 1
-			from escrutinar_jp import escrutinar
-			print(escrutinar.pegaripsite("github.com"))
-			
-	- Saber os dados de um IP no formato json
+```python
+from escrutinar_jp import escrutinar
+print(escrutinar.pegaripsite("github.com"))
+```			
+	- Saber os dados de um IP, que será gerado no formato json
 		-sondarip('' -> str, mostrar_flag=False -> bool)
 		se não colocar nada no parâmetro será retornado seu ip
 
 		-- exemplo 2
-
-			from escrutinar_jp import escrutinar
-			print(escrutinar.sondarip("8.8.8.8"))
-
+```python
+from escrutinar_jp import escrutinar
+print(escrutinar.sondarip("8.8.8.8"))
+```
 				saida -->> 
 
 					{
@@ -56,10 +58,10 @@ O pacote escrutinar é usado para:
 					}
 
 		-- exemplo 3
-		
-			from escrutinar_jp import escrutinar
-			print(escrutinar.sondarip("8.8.8.8", mostrar_flag=True))
-
+```python		
+from escrutinar_jp import escrutinar
+print(escrutinar.sondarip("8.8.8.8", mostrar_flag=True))
+```
 				saida -->>
 
 					{
