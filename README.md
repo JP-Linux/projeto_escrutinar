@@ -1,22 +1,26 @@
 # escrutinar_jp
 
-Descrição. 
+### Descrição. 
 
-O pacote escrutinar é usado para:
+* O pacote escrutinar é usado para:
 	
 
-	- Pegar o endereço de IP de um site requisitado
+	 * Pegar o endereço de IP de um site requisitado
+	 * Pega vários dados referênte a um IP, como citado nos exemplos abaixo
+	 * Obs: esse pacote usa uma API do site "https://ipwho.is/" para   obter os dados de um determinado IP
 	
-		--exemplo 1
+-
+		exemplo 1
 ```python
 from escrutinar_jp import escrutinar
-print(escrutinar.pegaripsite("github.com"))
+print(escrutinar.pediripsite("github.com"))
 ```			
-	- Saber os dados de um IP, que será gerado no formato json
-		-sondarip('' -> str, mostrar_flag=False -> bool)
-		se não colocar nada no parâmetro será retornado seu ip
+	Para saber os dados de um IP, usa-se
+	sondarip('' -> str, mostrar_flag=False -> bool)
+	que irá gerar um API no formato json,
+	se não colocar nada no parâmetro será retornado seu própio ip.
 
-		-- exemplo 2
+		exemplo 2
 ```python
 from escrutinar_jp import escrutinar
 print(escrutinar.sondarip("8.8.8.8"))
@@ -56,8 +60,9 @@ print(escrutinar.sondarip("8.8.8.8"))
 							'current_time': '2022-12-10T16:48:07-08:00'
 						}
 					}
+-
 
-		-- exemplo 3
+		exemplo 3
 ```python		
 from escrutinar_jp import escrutinar
 print(escrutinar.sondarip("8.8.8.8", mostrar_flag=True))
@@ -102,17 +107,26 @@ print(escrutinar.sondarip("8.8.8.8", mostrar_flag=True))
 							'current_time': '2022-12-10T16:54:32-08:00'
 						}
 					}
+					
+= 
+		exemplo 4
 
+```python		
+from escrutinar_jp import escrutinar
+
+ipsite = escrutinar.pediripsite("pip.pypa.io")
+print(escrutinar.sondarip(ipsite))
+```
 
 			
 
 
 ## Instalação
 
-Use o gerenciador de pacote [pip](https://pip.pypa.io/en/stable/) para instalar escrutinar_jp
+Use o gerenciador de pacote [pip](https://pip.pypa.io/en/stable/) para instalar escrutinar-jp
 
 ```bash
-pip install escrutinar_jp
+pip install escrutinar-jp
 ```
 
 ## Uso
