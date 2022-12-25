@@ -19,7 +19,8 @@ print(escrutinar.pediripsite("github.com"))
 	sondarip('' -> str, mostrar_flag=False -> bool)
 	que irá gerar um API no formato json,
 	se não colocar nada no parâmetro será retornado seu própio ip.
-
+	
+- 
 		exemplo 2
 ```python
 from escrutinar_jp import escrutinar
@@ -61,7 +62,6 @@ print(escrutinar.sondarip("8.8.8.8"))
 						}
 					}
 -
-
 		exemplo 3
 ```python		
 from escrutinar_jp import escrutinar
@@ -108,7 +108,7 @@ print(escrutinar.sondarip("8.8.8.8", mostrar_flag=True))
 						}
 					}
 					
-= 
+- 
 		exemplo 4
 
 ```python		
@@ -125,7 +125,7 @@ print(escrutinar.sondarip(ipsite))
 
 Use o gerenciador de pacote [pip](https://pip.pypa.io/en/stable/) para instalar escrutinar-jp
 
-```bash
+```sh-session
 pip install escrutinar-jp
 ```
 
