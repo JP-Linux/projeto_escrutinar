@@ -59,7 +59,7 @@ A função retorna um dicionário contendo informações sobre o endereço IP. E
 		"offset": "-25200",
 		"utc": "-07:00",
 		"current_time": "2023-04-29T18:44:31-07:00"
-		}
+	}
 }
 ```
 
