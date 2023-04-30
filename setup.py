@@ -8,7 +8,7 @@ with open("README.md", "r") as f:
 
 setup(
     name="escrutinar_jp",
-    version="0.0.1",
+    version="0.0.4",
     author="Jorge Paulo",
     author_email="jorgepsan7@gmail.com",
     description="pegar o IP de um determinado site, coletar dados de um determinado IP.",
