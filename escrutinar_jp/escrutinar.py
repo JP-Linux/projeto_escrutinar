@@ -213,7 +213,7 @@ def resolve_domain(
         raise
 
 # Função principal para exemplo de uso
-def main():
+'''def main():
     """Exemplos de uso das funções principais"""
     print("Exemplo 1 - Consulta IP com flag:")
     print(fetch_ip_info("8.8.8.8", show_flag=True))
@@ -235,4 +235,4 @@ def main():
         print(f"Erro esperado: {str(e)}")
 
 if __name__ == "__main__":
-    main()
+    main()'''
